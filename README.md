@@ -44,12 +44,12 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
 ## Results Comparision
 ### Image understanding
 <p align="left">
-<img src="assets/img_val.png" width=100%>
+<img src="assets/val_img.png" width=100%>
 </p>
 
 ### Video understanding
 <p align="left">
-<img src="assets/vid_val.png" width=100%>
+<img src="assets/val_vid.png" width=100%>
 </p>
 
 
