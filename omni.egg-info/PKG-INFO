@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: omni
+Version: 1.0
+Summary: Video QA Assistant based on LLM
+Project-URL: Bug Tracker, https://github.com/wanghao-cst/Omni-VideoAssistant/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: fastapi
+Requires-Dist: gradio==3.35.2
+Requires-Dist: markdown2[all]
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: sentencepiece
+Requires-Dist: tokenizers>=0.12.1
+Requires-Dist: torch==2.0.1
+Requires-Dist: torchvision==0.15.2
+Requires-Dist: uvicorn
+Requires-Dist: wandb
+Requires-Dist: shortuuid
+Requires-Dist: httpx==0.24.0
+Requires-Dist: deepspeed==0.9.5
+Requires-Dist: peft==0.4.0
+Requires-Dist: transformers==4.31.0
+Requires-Dist: accelerate==0.21.0
+Requires-Dist: bitsandbytes==0.41.0
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: sentencepiece==0.1.99
+Requires-Dist: einops==0.6.1
+Requires-Dist: einops-exts==0.0.4
+Requires-Dist: timm==0.6.13
+Requires-Dist: gradio_client==0.2.9
+
+
+# Omni-VideoAssistant
+Author Shihao Wang and Dongyang Yu and Wangpeng An
+
+## 🔨 Preparation
+```bash
+git clone https://github.com/wanghao-cst/Omni-VideoAssistant
+cd Omni-VideoAssistant
+```
+```shell
+conda create -n omni python=3.10 -y
+conda activate omni
+pip install --upgrade pip
+pip install -e .
+```
+
+## 🌟 Start here
+
+### Inference in cmd
+```
+CUDA_VISIBLE_DEVICES=0 python -m omni.eval.run_omni \
+    --model-path "path2omni_model" \
+    --image-file "omni/serve/examples/extreme_ironing.jpg" \
+    --query "What is unusual about this image?" \
+    --image-aspect-ratio "pad"
+CUDA_VISIBLE_DEVICES=0 python -m omni.eval.run_omni \
+    --model-path "path2omni_model" \
+    --video-file "omni/serve/examples/0A8CF.mp4" \
+    --query "Describe the activity in the video" \
+    --image-aspect-ratio "pad"
+```
+
+
+
+## 😊 Acknowledgment
+
+This work is based on [MVCE](https://github.com/shajiayu1/MVCE/), [LLaVA](https://github.com/haotian-liu/LLaVA/)

@@ -18,14 +18,14 @@ pip install -e .
 
 ### Inference in cmd
 ```
-CUDA_VISIBLE_DEVICES=0 python -m omni.eval.run_omni \
-    --model-path "path2omni_model" \
-    --image-file "omni/serve/examples/extreme_ironing.jpg" \
+CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
+    --model-path "path to omni checkpoints" \
+    --image-file "llava/serve/examples/extreme_ironing.jpg" \
     --query "What is unusual about this image?" \
     --image-aspect-ratio "pad"
-CUDA_VISIBLE_DEVICES=0 python -m omni.eval.run_omni \
-    --model-path "path2omni_model" \
-    --video-file "omni/serve/examples/0A8CF.mp4" \
+CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
+    --model-path path to omni checkpoints \
+    --video-file "llava/serve/examples/0A8CF.mp4" \
     --query "Describe the activity in the video" \
     --image-aspect-ratio "pad"
 ```
