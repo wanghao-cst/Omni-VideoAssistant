@@ -2,6 +2,8 @@
 # Omni-VideoAssistant
 Author Shihao Wang and Dongyang Yu and Wangpeng An
 
+We will release Training and Dataset soon.
+
 ## 🔨 Preparation
 ```bash
 git clone https://github.com/wanghao-cst/Omni-VideoAssistant
@@ -17,7 +19,15 @@ pip install -e .
 ## 🌟 Start here
 ### Download Omni Preview Model
 [Omni Preview Model 5.3](https://huggingface.co/harvey2333/omni_video_assistant_5_3)
-### Inference in cmd
+
+### Inference in Gradio Web UI
+```bash
+python -m  llava.serve.gradio_web_server
+```
+
+link 2 video
+
+### Inference in CLI
 ```
 CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --model-path "path to omni checkpoints" \
@@ -31,6 +41,16 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --image-aspect-ratio "pad"
 ```
 
+## Results Comparision
+### Image understanding
+<p align="left">
+<img src="assets/img_val.png" width=100%>
+</p>
+
+### Video understanding
+<p align="left">
+<img src="assets/vid_val.png" width=100%>
+</p>
 
 
 ## 😊 Acknowledgment
