@@ -15,7 +15,8 @@ pip install -e .
 ```
 
 ## 🌟 Start here
-
+### Download Omni Preview Model
+[Omni Preview Model 5.3](https://huggingface.co/harvey2333/omni_video_assistant_5_3)
 ### Inference in cmd
 ```
 CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
