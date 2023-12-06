@@ -55,4 +55,4 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
 
 ## 😊 Acknowledgment
 
-This work is based on [MVCE](https://github.com/shajiayu1/MVCE/), [LLaVA](https://github.com/haotian-liu/LLaVA/)
+This work is based on [MVCE for unlimited data generation.](https://github.com/shajiayu1/MVCE/), [LLaVA for pretrained model](https://github.com/haotian-liu/LLaVA/)
