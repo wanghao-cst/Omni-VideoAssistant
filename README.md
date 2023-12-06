@@ -1,8 +1,7 @@
 
 # Omni-VideoAssistant
-Author Shihao Wang and Dongyang Yu and Wangpeng An
-
-We will release Training and Dataset soon.
+Training and Dataset will be released soon.
+A more powerful model in on the way.
 
 ## 🔨 Preparation
 ```bash
@@ -18,14 +17,17 @@ pip install -e .
 
 ## 🌟 Start here
 ### Download Omni Preview Model
+Download for CLI inference only, gradio web UI will download it automatically.
 [Omni Preview Model 5.3](https://huggingface.co/harvey2333/omni_video_assistant_5_3)
 
 ### Inference in Gradio Web UI
-```bash
-python -m  llava.serve.gradio_web_server
-```
 
-link 2 video
+```Shell
+CUDA_VISIBLE_DEVICES=0 python -m  llava.serve.gradio_demo
+```
+<p align="left">
+<img src="assets/gradio_demo.png" width=100%>
+</p>
 
 ### Inference in CLI
 ```
@@ -33,12 +35,10 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --model-path "path to omni checkpoints" \
     --image-file "llava/serve/examples/extreme_ironing.jpg" \
     --query "What is unusual about this image?" \
-    --image-aspect-ratio "pad"
 CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --model-path path to omni checkpoints \
     --video-file "llava/serve/examples/0A8CF.mp4" \
     --query "Describe the activity in the video" \
-    --image-aspect-ratio "pad"
 ```
 
 ## Results Comparision

@@ -156,7 +156,7 @@ if __name__ == "__main__":
     parser.add_argument("--video-file", type=str, default=None)
     parser.add_argument("--query", type=str, required=True)
     parser.add_argument("--conv-mode", type=str, default=None)
-    parser.add_argument("--image-aspect-ratio", type=str, default=None)
+    parser.add_argument("--image-aspect-ratio", type=str, default="pad")
     args = parser.parse_args()
 
     eval_model(args)

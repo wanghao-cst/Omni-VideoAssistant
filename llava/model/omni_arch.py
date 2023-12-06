@@ -187,7 +187,12 @@ class OmniMetaForCausalLM(ABC):
                 cur_new_labels = []
                 assert cur_labels.shape == cur_input_ids.shape
             while image_token_indices.numel() > 0: # 统计元素个数 1
+                # import pdb;pdb.set_trace()
+                # if cur_video_idx > len(key_frames_feature)-1:
+                #     cur_frames_features = key_frames_feature[-1] # for gradio demo
+                # else:
                 cur_frames_features = key_frames_feature[cur_video_idx] # torch.Size([4, 256, 4096])
+                
                 cur_frames_features = cur_frames_features.reshape(-1,4096) # torch.Size([1024, 4096])
                 
                 image_token_start = image_token_indices[0] # tensor(35, device='cuda:0')
