@@ -3,6 +3,18 @@
 Training and Dataset will be released soon.
 A more powerful model is on the way.
 
+## 📝 Updates
+* **[2023.12.06]**  Gradio & CLI **Inference Demo** are available now.
+* **[2023.12.01]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_5_3) **Preview Model** are available now! Welcome to **watch** this repository for the latest updates.
+
+<details open><summary>💡 I also have other video-language projects that may interest you ✨. </summary><p>
+<!--  may -->
+
+> [**OmniDataComposer: A Unified Data Structure for Multimodal Data Fusion and Infinite Data Generation**](https://arxiv.org/abs/2308.04126) <br>
+> Dongyang Yu, Shihao Wang, Yuan Fang, Wangpeng An <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/shajiayu1/MVCE/) [![arXiv](https://img.shields.io/badge/Arxiv-2310.01852-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2308.04126) <br></p></details>
+
+
 ## 🔨 Preparation
 ```bash
 git clone https://github.com/wanghao-cst/Omni-VideoAssistant
@@ -34,14 +46,14 @@ CUDA_VISIBLE_DEVICES=0 python -m  llava.serve.gradio_demo
 CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --model-path "path to omni checkpoints" \
     --image-file "llava/serve/examples/extreme_ironing.jpg" \
-    --query "What is unusual about this image?" \
+    --query "What is unusual about this image?"
 CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
-    --model-path path to omni checkpoints \
+    --model-path "path to omni checkpoints" \
     --video-file "llava/serve/examples/0A8CF.mp4" \
-    --query "Describe the activity in the video" \
+    --query "Describe the activity in the video"
 ```
 
-## Results Comparision
+## 🔥 Results Comparision
 ### Image understanding
 <p align="left">
 <img src="assets/val_img.png" width=100%>
