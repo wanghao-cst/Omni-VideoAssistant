@@ -7,12 +7,7 @@ A more powerful model is on the way.
 * **[2023.12.06]**  Gradio & CLI **Inference Demo** are available now.
 * **[2023.12.01]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_5_3) **Preview Model** are available now! Welcome to **watch** this repository for the latest updates.
 
-<details open><summary>💡 I also have other video-language projects that may interest you ✨. </summary><p>
-<!--  may -->
 
-> [**OmniDataComposer: A Unified Data Structure for Multimodal Data Fusion and Infinite Data Generation**](https://arxiv.org/abs/2308.04126) <br>
-> Dongyang Yu, Shihao Wang, Yuan Fang, Wangpeng An <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/shajiayu1/MVCE/) [![arXiv](https://img.shields.io/badge/Arxiv-2310.01852-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2308.04126) <br></p></details>
 
 
 ## 🔨 Preparation
@@ -64,6 +59,12 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
 <img src="assets/val_vid.png" width=100%>
 </p>
 
+<details open><summary>💡 I also have other video-language projects that may interest you ✨. </summary><p>
+<!--  may -->
+
+> [**OmniDataComposer: A Unified Data Structure for Multimodal Data Fusion and Infinite Data Generation**](https://arxiv.org/abs/2308.04126) <br>
+> Dongyang Yu, Shihao Wang, Yuan Fang, Wangpeng An <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/shajiayu1/MVCE/) [![arXiv](https://img.shields.io/badge/Arxiv-2310.01852-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2308.04126) <br></p></details>
 
 ## 😊 Acknowledgment
 
