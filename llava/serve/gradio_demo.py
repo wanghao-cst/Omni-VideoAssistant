@@ -147,7 +147,7 @@ def clear_history(state, state_):
 
 
 conv_mode = "omni_v1"
-model_path = 'harvey2333/omni_video_assistant_5_3'
+model_path = 'harvey2333/omni_video_assistant_6_1'
 device = 'cuda'
 load_8bit = False
 load_4bit = False
