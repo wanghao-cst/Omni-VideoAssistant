@@ -2,6 +2,7 @@
 # Omni-VideoAssistant
 Training and Dataset will be released soon.
 A more powerful model is on the way.
+We also provide the [online demo](https://a258a782c01c4ba311.gradio.live).
 
 ## 📝 Updates
 * **[2023.12.09]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_6_1) **A Better Model V6.1** are available now! Welcome to **watch** this repository for the latest updates.
@@ -54,7 +55,7 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --query "Describe the activity in the video"
 ```
 
-## 🔥 Results Comparision (based on model 5.3, evaluation on 6.1 is on the way)
+## 🔥 Results Comparision (based on model 5.3, evaluation on 6.1 is doing)
 ### Image understanding
 <p align="left">
 <img src="assets/val_img.png" width=100%>
