@@ -206,6 +206,18 @@ with gr.Blocks(title='🤖Omni: Video Assistant based on LLM', theme=gr.themes.D
                         f"{cur_dir}/examples/sample_demo_22.mp4",
                         "Describe the activity in the video.",
                     ],
+                    [
+                    f"{cur_dir}/examples/sample_demo_1.mp4",
+                    "Why is this video funny?",
+                    ],
+                    [
+                        f"{cur_dir}/examples/sample_demo_3.mp4",
+                        "Can you identify any safety hazards in this video?"
+                    ],
+                    [
+                        f"{cur_dir}/examples/sample_demo_9.mp4",
+                        "Describe the video.",
+                    ],
                 ],
                 inputs=[video, textbox],
                 fn=clear_history(gr.State(), gr.State())
@@ -243,7 +255,7 @@ with gr.Blocks(title='🤖Omni: Video Assistant based on LLM', theme=gr.themes.D
                     [image1, video, textbox, first_run, state, state_, chatbot, images_tensor])
 
 # app = gr.mount_gradio_app(app, demo, path="/")
-demo.launch()
+demo.launch(share=True)
 
 
 # uvicorn llava.serve.gradio_web_server:app

@@ -4,8 +4,9 @@ Training and Dataset will be released soon.
 A more powerful model is on the way.
 
 ## 📝 Updates
+* **[2023.12.09]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_6_1) **A Better Model V6.1** are available now! Welcome to **watch** this repository for the latest updates.
 * **[2023.12.06]**  Gradio & CLI **Inference Demo** are available now.
-* **[2023.12.01]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_5_3) **Preview Model** are available now! Welcome to **watch** this repository for the latest updates.
+* **[2023.12.01]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_5_3) **Preview Model** are available now!
 
 <details open><summary>💡 I also have other video-language projects that may interest you ✨. </summary><p>
 <!--  may -->
@@ -53,7 +54,7 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --query "Describe the activity in the video"
 ```
 
-## 🔥 Results Comparision
+## 🔥 Results Comparision (based on model 5.3, evaluation on 6.1 is on the way)
 ### Image understanding
 <p align="left">
 <img src="assets/val_img.png" width=100%>
