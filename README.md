@@ -55,7 +55,7 @@ CUDA_VISIBLE_DEVICES=0 python -m llava.eval.run_omni \
     --query "Describe the activity in the video"
 ```
 
-## 🔥 Results Comparision (based on model 5.3, evaluation on 6.1 is doing)
+## 🔥 Results Comparision
 ### Image understanding
 <p align="left">
 <img src="assets/val_img.png" width=100%>
