@@ -31,7 +31,7 @@ pip install -e .
 
 ## 🌟 Start here
 ### Download Omni Preview Model
-Download for CLI inference only, gradio web UI will download it automatically.
+Download for CLI inference only, gradio web UI will download it automatically. Before switch to other video or image, please click "Clear history" first. Otherwise, it will generate answer related to the last input.
 [Omni Preview Model 6.1](https://huggingface.co/harvey2333/omni_video_assistant_6_1)
 
 ### Inference in Gradio Web UI
