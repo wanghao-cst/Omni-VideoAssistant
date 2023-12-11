@@ -2,7 +2,7 @@
 # Omni-VideoAssistant
 Training and Dataset will be released soon.
 A more powerful model is on the way.
-We also provide the [online demo](https://a258a782c01c4ba311.gradio.live).
+We also provide the [online demo](https://de973ccc16ab3cbd1d.gradio.live).
 
 ## 📝 Updates
 * **[2023.12.09]**  🤗[Hugging Face](https://huggingface.co/harvey2333/omni_video_assistant_6_1) **A Better Model V6.1** are available now! Welcome to **watch** this repository for the latest updates.

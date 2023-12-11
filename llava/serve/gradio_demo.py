@@ -67,6 +67,7 @@ def generate(image, video, textbox_in, first_run, state, state_, images_tensor):
         image = Image.open(image1).convert('RGB')
         image = expand2square(image, tuple(int(x*255) for x in vis_processor.image_mean))
         image_tensor = vis_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
+    
     trans_frames = []
     if not os.path.exists(image1) and os.path.exists(video1):
         video = cv2.VideoCapture(video1)
@@ -160,7 +161,7 @@ if not os.path.exists("temp"):
 app = FastAPI()
 
 textbox = gr.Textbox(
-        show_label=False, placeholder="Enter text and press ENTER", container=False
+        show_label=False, placeholder="Enter text here. Before switch to other video or image, please click \"Clear history\" first.", container=False
     )
 with gr.Blocks(title='🤖Omni: Video Assistant based on LLM', theme=gr.themes.Default(), css=block_css) as demo:
     gr.Markdown(title_markdown)
